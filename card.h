@@ -34,7 +34,9 @@ public:
 	bool operator >= ( const Card & other ) const		{ return( rank >= other.rank ); }
 	bool operator >= ( const Card * const other ) const	{ return( rank >= other->rank ); }
 	bool operator == ( const Card & other ) const		{ return( ( rank == other.rank ) && ( suit == other.suit ) ); }//not for pointers, normally a card should be unique !
+	bool operator == ( const Card * const other ) const	{ return( ( rank == other->rank ) && ( suit == other->suit ) ); }
 	bool operator != ( const Card & other ) const		{ return( ( rank != other.rank ) || ( suit != other.suit ) ); }//not for pointers, normally a card should be unique !
+	bool operator != ( const Card * const other ) const	{ return( ( rank != other->rank ) || ( suit != other->suit ) ); }
 
 	std::string toString( void ) const
 	{
