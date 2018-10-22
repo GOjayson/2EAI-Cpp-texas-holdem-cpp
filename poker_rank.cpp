@@ -67,10 +67,13 @@ PokerRank::PokerRank( std::vector<const Card *> combo )
 	//Prepping for help !
 	std::sort( combo.begin(), combo.end(), compareCardPointers );
 	byte suitCount[4] = {0,0,0,0};
+//	std::cout << "Suits (" << combo.size() << ") : ";
 	for( byte i = 0 ; i < (byte) combo.size() ; i++ )
 	{
+//		std::cout << combo.at(i);// (char) combo.at(i)->getSuit();
 		suitCount[combo.at(i)->getSuit()-0x3]++;
 	}
+//	std::cout << std::endl;
 
 	//Checking options
 	//STRAIGHT_FLUSH ?

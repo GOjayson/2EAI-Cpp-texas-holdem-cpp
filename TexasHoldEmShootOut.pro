@@ -26,3 +26,5 @@ HEADERS += \
 
 include(2016/2016.pri)
 include(2017/2017.pri)
+include(2018/2018.pri)
+#include(2019/all_files.pri)

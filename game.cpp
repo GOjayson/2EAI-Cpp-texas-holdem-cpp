@@ -109,7 +109,7 @@ void Game::betting( bool isPreFlop )
 #ifdef DEBUG_PRINT
 			std::cout << "Will you raise ";
 			players[i]->printID();
-			std::cout << " ?" << std::endl;
+			std::cout << " ?" << std::endl << std::endl;
 #endif
 			raisedBet = players[i]->willYouRaise( highestBet );
 #ifdef DEBUG_PRINT
