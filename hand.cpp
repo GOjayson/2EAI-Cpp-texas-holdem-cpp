@@ -1,5 +1,6 @@
 #include "hand.h"
 
+
 PokerRank Hand::getMyRank( void ) const
 {
 	if( cards[0] == nullptr )

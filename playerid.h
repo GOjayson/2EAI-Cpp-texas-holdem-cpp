@@ -7,6 +7,7 @@ enum PlayerID
 	NOOB,
 	VADER,
 	BART,
+    JAYSON,
 	PXL_2016,
 	PXL_2016_ARMAND,
 	PXL_2016_BRECHT,

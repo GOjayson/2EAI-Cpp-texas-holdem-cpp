@@ -3,9 +3,10 @@
 #include "tournament.h"
 #include "noob.h"
 #include "vader.h"
-#include "2016/2016.h"
-#include "2017/2017.h"
-#include "2018/2018.h"
+#include "jayson.h"
+//#include "2016/2016.h"
+//#include "2017/2017.h"
+//#include "2018/2018.h"
 
 using namespace std;
 
@@ -24,17 +25,20 @@ int main( int argumentCount, char * argumentVector[] )
 		//Previous years :
 //		PXL2016::registerPlayers( tour );
 //		PXL2017::registerPlayers( tour );
-		PXL2018::registerPlayers( tour );
+//		PXL2018::registerPlayers( tour );
 	}
 	else
 	{
 //		PXL2016::registerPlayers( tour );
 //		PXL2017::registerPlayers( tour );
-		PXL2018::registerPlayers( tour );
-		for( unsigned char i = 0 ; i < 4 ; i++ )
+//		PXL2018::registerPlayers( tour );
+        for( unsigned char i = 0 ; i < 2 ; i++ )
 		{
 			tour.registerPlayer( new Noob( i ), NOOB );
 		}
+
+        tour.registerPlayer( new PXL2020::Jayson(), JAYSON );
+
 		tour.registerPlayer( new Vader(), VADER );
 	}
 	tour.start();

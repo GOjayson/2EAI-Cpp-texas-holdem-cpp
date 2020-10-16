@@ -7,6 +7,7 @@ SOURCES += main.cpp \
 	deck.cpp \
 	game.cpp \
 	hand.cpp \
+	jayson.cpp \
 	poker_rank.cpp \
 	table.cpp \
 	tournament.cpp
@@ -16,6 +17,7 @@ HEADERS += \
 	deck.h \
 	game.h \
 	hand.h \
+	jayson.h \
 	player.h \
 	playerid.h \
 	poker_rank.h \
